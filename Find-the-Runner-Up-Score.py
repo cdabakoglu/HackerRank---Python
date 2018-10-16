@@ -1,7 +1,13 @@
 n = int(input())
 arr = map(int, input().split())
 
-print(list(set(arr))[-2])
+num = list(arr)
+a = max(num)
+
+while a == max(num):
+    num.remove(max(num))
+
+print(max(num))
 
 
 # Caner Dabakoğlu
